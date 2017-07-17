@@ -1,0 +1,7 @@
+# git 対象外
+
+*~
+
+*.pyc
+.DS_Store
+data.csv

@@ -1,0 +1,44 @@
+    body{
+        position: hidden;
+        margin: 10px;
+        padding: 60px 10px 50px 10px;
+        background-color: #fff;
+        color: #fff;
+    }
+
+    header {
+        position: fixed !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+        color: #fff;
+		z-index: 100;
+    }
+    map {
+        height: 100%;
+      }
+
+	/*
+	div#Tag {
+        position: fixed !important;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #fff;
+	} */
+
+    footer {
+        position: fixed !important;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        background-color: #fff;
+        /*color: #fff;*/
+    }

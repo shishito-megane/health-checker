@@ -1,0 +1,6 @@
+#mesuring, ,,,,
+#日付,緯度,経度,高度,スピード,距離
+( Date datetime unique, Latitude double, Longitude double, Altitude double, Speed double, Distance double)
+%s,%s,%s,%s,%s,%s
+0,1,2,3,4,5
+row[0],row[1],row[2],row[3],row[4],row[5]

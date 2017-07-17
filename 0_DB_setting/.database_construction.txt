@@ -1,0 +1,20 @@
+MariaDB [gpsdata]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| gpsdata            |
++--------------------+
+
+
+MariaDB [gpsdata]> SHOW COLUMNS FROM measuring;
++-----------+----------+------+-----+---------+-------+
+| Field     | Type     | Null | Key | Default | Extra |
++-----------+----------+------+-----+---------+-------+
+| Date      | datetime | YES  | UNI | NULL    |       |
+| Latitude  | double   | YES  |     | NULL    |       |
+| Longitude | double   | YES  |     | NULL    |       |
+| Altitude  | double   | YES  |     | NULL    |       |
+| Speed     | double   | YES  |     | NULL    |       |
+| Distance  | double   | YES  |     | NULL    |       |
++-----------+----------+------+-----+---------+-------+
+

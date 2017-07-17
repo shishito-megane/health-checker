@@ -1,0 +1,15 @@
+#! /bin/sh
+#  xxx
+#  2016年  5月 18日 水曜日 13:53:00 JST
+
+   DiR=`dirname $0`
+
+   set -x
+   cd $DiR
+      date +"%Y-%m-%d %H:%M:%S %Z"  
+      killall GpsData.py
+      ./start.sh
+      ./GpsData.py  > log1.log 2>&1
+
+
+
