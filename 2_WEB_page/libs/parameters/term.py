@@ -1,5 +1,7 @@
+"""
+日付に関するパラメータの設定を行います．
+"""
 # -*- coding: utf-8 -*-
-# パラメータの設定を行います。
 from datetime import datetime, timedelta
 
 class Parameter:
@@ -24,4 +26,4 @@ class Parameter:
             # 日付時刻型のフォーマット
             self.goal_day   = datetime.strptime(goal_str+" 23:59","%Y/%m/%d %H:%M")
         # 文字型のフォーマット
-        self.goal_str  = self.goal_day.strftime("%Y年%m月%d日 %H時%M分") 
+        self.goal_str  = self.goal_day.strftime("%Y年%m月%d日 %H時%M分")

@@ -9,9 +9,15 @@ def latlng_to_xyz(lat, lng):
     return coslat*cos(rlng), coslat*sin(rlng), sin(rlat)
 
 def dist_on_sphere(pos0, pos1, radious=earth_rad):
+    """
+    2地点間の距離を計算します．
+    pos0: 開始地点の座標(latitude,longtitude)
+    pos1: 終了地点の座標(latitude,longtitude)
+    """
     xyz0, xyz1 = latlng_to_xyz(*pos0), latlng_to_xyz(*pos1)
     return acos(sum(x * y for x, y in zip(xyz0, xyz1)))*radious
 
+# 以下は，dist_on_sphere の実行例
 # Osaka = 34.702113, 135.494807
 # Tokyo = 35.681541, 139.767103
 # London = 51.476853, 0.0

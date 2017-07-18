@@ -1,5 +1,7 @@
+"""
+データベースのテーブルを作るプログラム．READMEを参考にしてください．
+"""
 # -*- coding: utf-8 -*-
-# データベースのテーブル作成用プログラム
 import sys
 import os
 sys.path.append(os.pardir)

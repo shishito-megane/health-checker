@@ -1,5 +1,7 @@
+"""
+テスト用のCSVサンプルデータをDBへインポートするプログラム
+"""
 # -*- coding: utf-8 -*-
-# テストCSVデータインポート用プログラム
 import csv
 import sys
 import os

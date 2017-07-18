@@ -2,7 +2,9 @@
 # 健康かどうか判定するモジュール
 
 def judge(sex,sum_hosu):
-
+    """
+    健康かどうか判定し，結果画像と結果文字列のソースを出力します．
+    """
     lev = 0
     if(sex is "man"):
         if(sum_hosu < 8202):

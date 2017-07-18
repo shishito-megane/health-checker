@@ -6,6 +6,9 @@ from cal_hosu import convert
 
 # 日付リストの成形
 def get_daily_span(hourly_data):
+    """
+    グラフ表示用に日付の文字列リストの作成をします．
+    """
 
     date = {
         "date":   [str(d.oclock) for d in hourly_data]
@@ -14,6 +17,9 @@ def get_daily_span(hourly_data):
 
 # 計測データリストの成形
 def datas(hourly_data,point_data,height):
+    """
+    グラフ表示用に計測データのリストを作成します．
+    """
 
     distance    = [ d.distance for d in hourly_data]
     hosu        = [convert(d,height) for d in distance]
