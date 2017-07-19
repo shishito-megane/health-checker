@@ -54,6 +54,8 @@ GPS信号を用いた健康診断アプリケーション
   - [ＧＰＳモジュール ＧＭＳ６－ＣＲ６ （９６００ｂｐｓ）(秋月電子)](http://akizukidenshi.com/catalog/g/gM-09252/)
 
 
-# LICENCE
+# 利用・配布
 
-  © 2017 Shishito Megane. All rights reserved.
+自由です．利用により問題が生じても作者は責任を負いません．
+
+
