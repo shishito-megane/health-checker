@@ -1,7 +1,5 @@
-"""
-日付に関するパラメータの設定を行います．
-"""
 # -*- coding: utf-8 -*-
+# 日付に関するパラメータの設定を行います．
 from datetime import datetime, timedelta
 
 class Parameter:

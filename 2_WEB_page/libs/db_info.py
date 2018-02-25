@@ -1,8 +1,5 @@
-"""
-データベース接続情報．環境変数から取得します．
-"""
 # -*- coding:utf-8 -*-
-# データベース接続情報
+# データベース接続情報．環境変数から取得します．
 import os
 
 HOST            = os.environ.get("HEALTHCHECKER_HOST")
