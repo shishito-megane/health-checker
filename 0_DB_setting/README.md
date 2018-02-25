@@ -61,7 +61,7 @@ export HEALTHCHECKER_DATABASE='healthchecker'
 export HEALTHCHECKER_USER='USERNAME'
 export HEALTHCHECKER_PASSWD='PASSWORD'
 ```
-- `localhost` は，運用状況に合わせtえ書き換えてください．
+- `localhost` は，運用状況に合わせて書き換えてください．
 - `USERNAME`, `PASSWORD` は上で決めたものを入力してください．
 
 - これら環境変数に保存した接続情報は`db_info.py`から取り出して遣います．
