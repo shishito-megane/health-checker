@@ -57,10 +57,10 @@
         <table class="table">
           <tr class="active">
             <td>移動距離</td>
-            <td>{{table_dataset['sum_distance']}} [km] </td>
+            <td>{{int(table_dataset['sum_distance'])}} [km] </td>
             </tr>
             <td>歩数合計</td>
-            <td>{{table_dataset['sum_hosu']}} [歩] </td>
+            <td>{{int(table_dataset['sum_hosu'])}} [歩] </td>
           </tr>
         </table>
       </div>
@@ -84,13 +84,13 @@
   flg=0;
   function setMsgTenmetu(){
     if(flg < 6 & flg % 2 == 0){
-      document.getElementById("msgid1").innerHTML="<h2><Center>{{table_dataset['sum_hosu']}}歩です♪♪</Center></h2>";
+      document.getElementById("msgid1").innerHTML="<h2><Center>{{int(table_dataset['sum_hosu'])}}歩です♪♪</Center></h2>";
     }
     else if (flg < 6 & flg % 2 == 1){
       document.getElementById("msgid1").innerHTML="<h2><Center></Center></h2>";
     }
     else {
-      document.getElementById("msgid1").innerHTML="<h2><Center>{{table_dataset['sum_hosu']}}歩です♪♪</Center></h2>";
+      document.getElementById("msgid1").innerHTML="<h2><Center>{{int(table_dataset['sum_hosu'])}}歩です♪♪</Center></h2>";
     }
     flg += 1;
     setTimeout("setMsgTenmetu()",500);
