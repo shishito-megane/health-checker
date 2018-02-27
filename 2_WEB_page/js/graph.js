@@ -3,7 +3,7 @@ function onButtonClick(
 ) {
 
   // 見出しの設定 (リストの1つ目が見出し)
-  date_dis = ['日時']
+  date_dis = ['時刻']
   // 日付のみ別指定
   date_dis = date_dis.concat(date)
 
@@ -17,6 +17,7 @@ function onButtonClick(
       "xScaleRotate":   -90,     // 角度 (0で水平、-45で右肩上がり80、-90で直角)
       "xScaleYOffset":  50,      // チャート領域との間隔
       "paddingBottom":  100,     // チャートの下パディング。水平軸目盛りの縦幅
+      "roundDigit":     1,       // 軸目盛値の端数処理
       "type":           "line",
       "minY":           0,
       "unit":           "km",
@@ -36,12 +37,14 @@ function onButtonClick(
   var chartdata4= {
     "config": {
       "title":          "きょうの活動量",
-      "subTitle":       "ちょめちょめ",
+      //"subTitle":       "",
       "width":          750,
       "height":         500,
       "xScaleRotate":   -90,     // 角度 (0で水平、-45で右肩上がり80、-90で直角)
       "xScaleYOffset":  50,      // チャート領域との間隔
       "paddingBottom":  100,     // チャートの下パディング。水平軸目盛りの縦幅
+      "roundDigit":     0,       // 軸目盛値の端数処理
+      //"barWidth":       20,
       "type":           "stacked",
       "unit":           "歩",
       "useVal":         "no",
