@@ -11,10 +11,10 @@ def get_daily_span(hourly_data):
     グラフ表示用に日付の文字列リストの作成をします．
     """
 
-    date = {
+    date_list = {
         "date": [str(d.oclock) for d in hourly_data]
     }
-    return date
+    return date_list
 
 
 # 計測データリストの成形

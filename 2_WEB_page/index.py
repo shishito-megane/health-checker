@@ -79,10 +79,10 @@ def database():
 
     # データの取得
     hourly_data = MeasuringData().hourly_data(
-        param.start_day,param.goal_day
+        param.start_day, param.goal_day
     )
     point_data = MeasuringData().point_data(
-        param.start_day,param.goal_day
+        param.start_day, param.goal_day
     )
 
     # データの成形
@@ -112,7 +112,7 @@ def database():
 
     # ヘッター，フッター，メニューバーあたりの設定
     title = "ヘルス☆チェッカー | 移動履歴"
-    footer  = "© 2017 Shishito Megane. All rights reserved."
+    footer = "© 2017 Shishito Megane. All rights reserved."
 
     # GETパラメータの取得
     name = request.query.name
@@ -137,13 +137,12 @@ def database():
         param.start_day, param.goal_day
     )
     # データの成形
-    span = get_daily_span(hourly_data)
     graph_dataset, t, map_dataset = format_datas(
         hourly_data, point_data, height
     )
 
     return dict(
-        title=title,footer=footer,
+        title=title, footer=footer,
         name=name, sex=sex, height=height,
         map_dataset=map_dataset
     )
