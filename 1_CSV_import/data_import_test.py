@@ -12,9 +12,9 @@ os.chdir("../4_Data")
 
 connection = MySQLdb.connect(
     host=db_info.HOST,
-    database=db_info.NAME,
+    db=db_info.NAME,
     user=db_info.USER,
-    password=db_info.USER_PASSWORD
+    passwd=db_info.USER_PASSWORD
 )
 
 cursor = connection.cursor()
