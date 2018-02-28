@@ -3,6 +3,7 @@ import os
 from peewee import *
 from datetime import date
 import sys
+# TODO: データベース接続情報を1つ上ではなく，2つ上のファイルから取得する
 sys.path.append(os.pardir)
 import db_info
 
