@@ -29,12 +29,12 @@ class Clumn:
 
 class Measuring(Model):
 
-    date = DateTimeField(unique=True,primary_key=True)
-    latitude = TextField(db_column= Clumn.measuring.latitude)
-    longitude = TextField(db_column= Clumn.measuring.longitude)
-    altitude = TextField(db_column= Clumn.measuring.altitude)
-    speed = TextField(db_column= Clumn.measuring.speed)
-    distance = TextField(db_column= Clumn.measuring.distance)
+    date = DateTimeField(unique=True, primary_key=True)
+    latitude = TextField(db_column=Clumn.measuring.latitude)
+    longitude = TextField(db_column=Clumn.measuring.longitude)
+    altitude = TextField(db_column=Clumn.measuring.altitude)
+    speed = TextField(db_column=Clumn.measuring.speed)
+    distance = TextField(db_column=Clumn.measuring.distance)
 
     class Meta:
         database = db
