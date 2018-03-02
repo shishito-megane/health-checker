@@ -1,7 +1,5 @@
 # -*- coding:utf-8 -*-
 # グラフと表のデータを成形するモジュール
-from datetime import *
-from cal_distance import dist_on_sphere
 from cal_hosu import convert
 
 
