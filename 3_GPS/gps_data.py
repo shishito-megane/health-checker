@@ -1,8 +1,5 @@
-"""
-GPSモジュールからデータを取得します．
-"""
 # -*- coding: utf-8 -*-
-
+# GPSモジュールからデータを取得します．
 import os
 from gps import *
 from time import *
